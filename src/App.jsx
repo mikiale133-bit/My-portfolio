@@ -9,7 +9,7 @@ import Projects from './components/Projects'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import WhyMe from './components/WhyMe'
-import CallToAction from './components/CallToAction'
+import CallToAction from './components/callToAction'
 
 const App = () => {
   // const [theme, setTheme] = useState('light');
