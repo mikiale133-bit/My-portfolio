@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 export default function WhyMe() {
   return (
     <section className="text-white bg-black">
-      <div className="px-6 mx-auto max-w-7xl py-28">
+      <div className="px-6 mx-auto max-w-7xl py-28 max-sm:pb-5">
         <div className="grid grid-cols-1 gap-16 sm:grid-cols-2">
           {/* Left */}
           <div>
@@ -23,32 +23,38 @@ export default function WhyMe() {
               and ship products that perform in the real world.
             </p>
 
-            <p className="max-w-xl mt-4 text-sm text-zinc-400">
-              No overengineering. No guesswork. Just focused execution.
+            <p className="max-w-xl mt-4 text-lg text-blue-400">
+             No overengineering. No guesswork. Just focused execution.
             </p>
           </div>
 
           {/* Right */}
           <div className="flex flex-col justify-center space-y-10">
-            <WhyLine
-              title="Proven delivery"
-              text="10+ production-ready projects successfully delivered across multiple industries."
-            />
+            <div className="pb-5 border-b border-white/30">
+              <WhyLine
+                title="Proven delivery"
+                text="10+ production-ready projects successfully delivered across multiple industries."
+              />
+            </div>
 
-            <WhyLine
-              title="Trust & consistency"
-              text="100% job success with repeat clients and long-term collaborations."
-            />
+            <div className="pb-5 border-b border-white/30">
+              <WhyLine
+                title="Trust & consistency"
+                text="100% job success with repeat clients and long-term collaborations."
+              />
+            </div>
 
-            <WhyLine
-              title="Built for outcomes"
-              text="Every decision is guided by performance, scalability, and business impact."
-            />
+            <div className="pb-5 border-b border-white/30">
+              <WhyLine
+                title="Built for outcomes"
+                text="Every decision is guided by performance, scalability, and business impact."
+              />
+            </div>
           </div>
         </div>
 
         {/* Subtle divider */}
-        <div className="flex items-center gap-3 mt-20 text-sm text-zinc-400">
+        <div className="flex items-center gap-3 px-5 py-2 mt-10 text-sm bg-gray-800 rounded-lg max-w-150 text-zinc-400">
           <ArrowUpRight className="w-4 h-4" />
           Ready to see how this translates into real projects?
         </div>

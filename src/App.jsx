@@ -17,7 +17,6 @@ const App = () => {
     <div className=''>
       <Navbar />
       <Hero />
-      <About />
       <Services />
       <WhyMe />
       <Projects />

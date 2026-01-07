@@ -21,7 +21,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="text-white bg-black py-28">
+    <section className="text-white bg-black py-28 max-sm:15 max-sm:pb-5 border-white/20">
       <div className="px-6 mx-auto text-center max-w-7xl">
         <h2 className="text-3xl font-extrabold sm:text-5xl">
           What clients say
@@ -30,15 +30,17 @@ export default function Testimonials() {
           Real feedback from people I’ve collaborated with.
         </p>
 
-        <div className="grid grid-cols-1 gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 mt-12 overflow-x-scroll max-sm:flex sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="p-6 text-left border rounded-2xl border-white/10 bg-white/5 backdrop-blur"
+              className="p-6 text-left bg-gray-900 border rounded-2xl border-white/10 backdrop-blur min-w-70"
             >
               <p className="mb-4 text-sm text-zinc-300">&ldquo;{t.quote}&rdquo;</p>
-              <p className="font-semibold">{t.name}</p>
-              <p className="text-xs text-zinc-400">{t.role}</p>
+              <div className="">
+                <p className="font-semibold">{t.name}</p>
+                <p className="text-xs text-zinc-400">{t.role}</p>
+              </div>
             </div>
           ))}
         </div>

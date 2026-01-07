@@ -3,7 +3,7 @@ import { Code2, Palette, Lightbulb } from "lucide-react";
 export default function Services() {
   return (
     <section className="relative text-white bg-black">
-      <div className="px-6 py-24 mx-auto max-w-7xl">
+      <div className="px-6 py-24 mx-auto max-sm:px-3 max-sm:pb-3 max-w-7xl">
         {/* Section header */}
         <div className="mb-16 text-center">
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-5xl">
@@ -63,7 +63,7 @@ export default function Services() {
 
 function ServiceCard({ icon, title, description, items }) {
   return (
-    <div className="p-8 transition border max-md:p-5 max-md:p-3 group rounded-3xl border-white/10 bg-white/5 backdrop-blur hover:border-white/20">
+    <div className="p-8 transition border max-md:p-5 max-md:p-3 group rounded-3xl border-white/30 bg-white/5 backdrop-blur hover:border-white/50">
       <div className="flex items-center justify-center w-12 h-12 mb-6 rounded-2xl bg-white/10">
         {icon}
       </div>

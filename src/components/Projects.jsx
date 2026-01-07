@@ -1,30 +1,29 @@
 import { ExternalLink, Github } from "lucide-react";
-
 const projects = [
   {
     title: "SaaS Landing Platform",
-    image: "/projects/saas.jpg",
+    image: "public/images/port2.png",
     tech: ["React", "Tailwind"],
     live: "https://example.com",
     source: "https://github.com/username/project",
   },
   {
     title: "E-commerce Web App",
-    image: "/projects/ecommerce.jpg",
+    image: "public/images/port1.png",
     tech: ["Next.js", "Stripe"],
     live: "https://example.com",
     source: "https://github.com/username/project",
   },
   {
     title: "Portfolio Website",
-    image: "/projects/portfolio.jpg",
+    image: "public/images/port3.png",
     tech: ["HTML", "CSS", "JS"],
     live: "https://example.com",
     source: "https://github.com/username/project",
   },
   {
     title: "Portfolio Website",
-    image: "/projects/portfolio.jpg",
+    image: "public/images/port4.png",
     tech: ["HTML", "CSS", "JS"],
     live: "https://example.com",
     source: "https://github.com/username/project",
@@ -47,13 +46,14 @@ export default function ProjectsSection() {
               projects
             </span>
           </h2>
+          <img src="" alt="" />
           <p className="max-w-xl mt-4 text-zinc-400">
             A focused selection of production-ready work.
           </p>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 gap-6 px-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 px-5 max-sm:px-0 sm:grid-cols-2 lg:grid-cols-4">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
@@ -65,7 +65,7 @@ export default function ProjectsSection() {
 
 function ProjectCard({ project }) {
   return (
-    <div className="overflow-hidden transition border group rounded-2xl border-white/10 bg-white/5 backdrop-blur hover:border-white/20">
+    <div className="overflow-hidden transition bg-gray-900 border-2 group rounded-2xl border-white/11 backdrop-blur hover:border-white/20">
       {/* Image */}
       <div className="relative aspect-[7/4] overflow-hidden">
         <img
@@ -97,7 +97,7 @@ function ProjectCard({ project }) {
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 hover:text-white"
+            className="inline-flex items-center gap-1 hover:text-white p-1.5 border rounded-md border-white/20"
           >
             Live <ExternalLink className="h-3.5 w-3.5" />
           </a>
@@ -106,7 +106,7 @@ function ProjectCard({ project }) {
             href={project.source}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 hover:text-white"
+            className="inline-flex items-center gap-1 p-1.5 border rounded-md border-white/20 hover:text-white"
           >
             Code <Github className="h-3.5 w-3.5" />
           </a>

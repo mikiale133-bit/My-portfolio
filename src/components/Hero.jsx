@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="absolute right-1/4 bottom-[-20%] h-[400px] w-[400px] rounded-full bg-cyan-500/20 blur-3xl" />
       </div>
 
-      <div className="relative px-6 mx-auto max-w-7xl py-28">
+      <div className="relative px-5 pb-10 mx-auto max-w-7xl pt-28">
         {/* Headline */}
         <h1 className="text-4xl tracking-tight text-center sm:text-6xl">
           I build{" "}
@@ -47,7 +47,7 @@ export default function Hero() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 gap-6 mt-20 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 mt-20 max-sm:gap-5 max-sm:mt-5 sm:grid-cols-3">
           <StatCard
             icon={<CheckCircle className="w-6 h-6 text-purple-400" />}
             value="10+"
@@ -71,7 +71,7 @@ export default function Hero() {
 
 function StatCard({ icon, value, label }) {
   return (
-    <div className="p-8 rounded-3xl backdrop-blur">
+    <div className="p-5 rounded-3xl backdrop-blur">
       <div className="flex items-center justify-center mb-4">{icon}</div>
       <p className="text-4xl font-bold text-center">{value}</p>
       <p className="mt-2 text-sm text-center text-zinc-400">{label}</p>

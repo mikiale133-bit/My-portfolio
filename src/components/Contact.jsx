@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="text-white bg-black py-28">
+    <section id="contact" className="text-white bg-black py-28 max-sm:pb-10">
       <div className="max-w-3xl px-6 mx-auto text-center">
         <h2 className="px-2 text-2xl font-extrabold sm:text-4xl">
           Let’s build something together
@@ -28,7 +28,7 @@ export default function Contact() {
           ></textarea>
           <button
             type="submit"
-            className="px-6 py-4 mt-2 font-semibold text-black transition rounded-2xl bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 hover:opacity-90"
+            className="px-6 py-4 mt-2 font-semibold text-white transition rounded-2xl bg-gradient-to-r from-purple-700 to-cyan-700 hover:opacity-90"
           >
             Send Message
           </button>
@@ -36,7 +36,7 @@ export default function Contact() {
 
         <p className="mt-6 text-sm text-zinc-500">
           Or reach me directly at{" "}
-          <a href="mailto:youremail@example.com" className="underline">
+          <a href="mailto:youremail@example.com" className="underline text-white/100">
             youremail@example.com
           </a>
         </p>
